@@ -12,7 +12,8 @@ export const fetchImage = (req,res) => {
         
         if(result.rowCount > 0){
             const imagepath = result.rows[0].imagepath;
-            const filePath = path.join(__dirname, '..','asset', 'Images', imagepath.split('/')[3])
+            const filePath = (process.env.NODE_ENV === 'PRODUCTION') ? path.join(__dirname, '..', '..','server','asset', 'Images', imagepath.split('/')[3]) :  path.join(__dirname, '..','asset', 'Images', imagepath.split('/')[3])
+
             console.log('dir', filePath);
             console.log('image path', imagepath);
             const stat = fs.statSync(filePath);
