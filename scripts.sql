@@ -3,7 +3,7 @@ imagepath varchar(500), brandname varchar(100),  cost integer,category varchar(5
 
 INSERT INTO BASE_ITEM(brandname,itemame,imagepath,cost,category, datecreated)
 values
-('birds','custard', '/asset/Images/birds_custard_1.jpg', 200,'men', NOW()),
+('birds','custard', '/asset/Images/birds_custard_2.jpg', 200,'men', NOW()),
 ('melody','bread', '/asset/Images/bread_1.jpg', 150,'men', NOW()),
 ('peak','milk', '/asset/Images/daily_pure_milk_1.jpg', 200,'men', NOW()),
 ('keleops','cereals', '/asset/Images/loop_cereals_1.jpg', 200,'men', NOW()),
